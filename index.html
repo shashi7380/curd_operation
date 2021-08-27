@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD AJAX </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="alert-info text-center mb-5 p-3">
+            AJAX -- PHP -- Javascript -- bootstrap 5
+        </h1>
+        <div class="row">
+            <form action="" class="col-sm-5" id="myform">
+                <h3 class="alert-warning text-center p-2" >Add/Update Student</h3>
+                <div>
+                    <input style="display: none;" class="form-control" type="text" id="stid"/>
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pass">
+                </div>
+                <div class="mt-3 mb-3">
+                    <button type="submit" class="btn btn-primary col-sm-5" id="btns">Save</button>
+                </div>
+                <div id="msg"></div>
+            </form>
+            <div class="col-sm-7">
+                <h3 class="alert-success p-2 text-center">Show Student Information</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    
+
+    <script src="js/ajaxscript.js"></script>
+    <script src="js/propper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
